@@ -4,7 +4,7 @@ class CreateEventVenues < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :address
       t.integer :capacity
-      t.integer :venue_id
+      
 
       t.timestamps
     end
