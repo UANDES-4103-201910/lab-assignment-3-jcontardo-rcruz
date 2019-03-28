@@ -4,12 +4,10 @@ one:
   name: MyString
   description: MyText
   start_date: 2019-03-27
-  event_venue: 
-  event_id: 
+  event_venue: 1
 
 two:
   name: MyString
   description: MyText
   start_date: 2019-03-27
-  event_venue: 
-  event_id: 
+  event_venue: 1

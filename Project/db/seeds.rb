@@ -18,17 +18,16 @@ User.create(name:'Andres',last_name:'Dias',email:'ad@miuandes.cl',phone:34343434
 
 User.create(name:'Josefina',last_name:'Fierro',email:'jf@miuandes.cl',phone:343434343434,password:'12348',address:'camino4')
 
-venue1 = EventVenue.create(name:'Estadio Nacional',address:'Santiago',capacity:50.000)
+ev = EventVenue.create(name:'Estadio Nacional',address:'Santiago',capacity:50.000)
 
-idvenue1= venue1.id() 
 date1= Date.new(2006,11,10) # Fecha evento 1
 date2= Date.new(2007,12,10) # Fecha evento 2
 date3= Date.new(2008,01,10) # Fecha evento 3
 
 
-Event.create(name:'Bad Bunny', description:'musica aborigen puertoriqueña', start_date:date1, event_venue:2)
+Event.create(name:'Bad Bunny', description:"musica aborigen puertoriqueña", start_date:date1, event_venue:ev.id)
 
-Event.create(name:'Ozuna', description:'musica clasica', start_date:date2, event_venue:3)
-
-Event.create(name:'Paloma Mami', description:'musica romantica', start_date:date3, event_venue:4)
+Event.create(name:'Ozuna', description:'musica clasica', start_date:date2, event_venue:ev.id)
+	
+Event.create(name:'Paloma Mami', description:'musica romantica', start_date:date3, event_venue:ev.id)
 

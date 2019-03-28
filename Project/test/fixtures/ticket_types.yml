@@ -4,12 +4,10 @@ one:
   event: 1
   price: 1
   category: MyString
-  ticket_id: 1
   order_id: 1
 
 two:
   event: 1
   price: 1
   category: MyString
-  ticket_id: 1
   order_id: 1

@@ -7,7 +7,6 @@ one:
   phone: 1
   password: MyString
   address: MyString
-  user_id: 1
 
 two:
   name: MyString
@@ -16,4 +15,3 @@ two:
   phone: 1
   password: MyString
   address: MyString
-  user_id: 1

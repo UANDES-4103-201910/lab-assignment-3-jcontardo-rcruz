@@ -4,10 +4,8 @@ one:
   name: MyString
   address: MyString
   capacity: 1
-  venue_id: 1
 
 two:
   name: MyString
   address: MyString
   capacity: 1
-  venue_id: 1
