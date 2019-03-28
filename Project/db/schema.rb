@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_27_135114) do
+ActiveRecord::Schema.define(version: 2019_03_28_131123) do
 
   create_table "event_venues", force: :cascade do |t|
     t.string "name"
     t.string "address"
     t.integer "capacity"
-    t.integer "venue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,25 +25,13 @@ ActiveRecord::Schema.define(version: 2019_03_27_135114) do
     t.text "description"
     t.date "start_date"
     t.integer "event_venue"
-    t.integer "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "ticket_orders", force: :cascade do |t|
     t.integer "amount"
-    t.integer "order_id"
     t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "ticket_types", force: :cascade do |t|
-    t.integer "event"
-    t.integer "price"
-    t.string "category"
-    t.integer "ticket_id"
-    t.integer "order_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -56,7 +43,6 @@ ActiveRecord::Schema.define(version: 2019_03_27_135114) do
     t.integer "phone"
     t.string "password"
     t.string "address"
-    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
